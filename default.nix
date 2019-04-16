@@ -2,8 +2,7 @@
 
 let
   stdenv = pkgs.stdenv;
-  buildins = pkgs.buildins;
-  fetchGit = buildins.fetchGit;
+  fetchGit = builtins.fetchGit;
 in
 rec {
     mc-config = import ./mc-config {
